@@ -1,0 +1,14 @@
+#Nom du server
+myhostname = Personnel.server
+mydomain = ptf.com
+myorigin = $mydomain
+
+
+#Message lorsqu'on ce connecte sur le serveur smtp
+smtpd_banner = Bienvenue sur mon $myhostname SMTP le domaine est : ptf.com
+#Utilisation de la commande EHLO pour acceder au commande SMTP
+smtpd_helo_required = yes
+
+
+smtpd_recipient_restrictions = permit_mynetworks, reject_unauth_destination
+
